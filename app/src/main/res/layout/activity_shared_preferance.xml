@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SharedPreferanceActivity">
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="saveData"
+        android:text="Save Data"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/LoadData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="LoadData"
+        app:layout_constraintTop_toBottomOf="@id/btn_save"
+        android:text="Load Data"
+        android:textSize="20sp" />
+
+</android.support.constraint.ConstraintLayout>
